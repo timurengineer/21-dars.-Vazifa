@@ -1,3 +1,137 @@
+@font-face {
+	font-family: 'Playfair';
+	src: url('../fonts/playfairdisplay-variablefont_wght-webfont.woff')
+		format('woff');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
 body {
-	background-color: red;
+	font-family: 'Playfair';
+	text-align: center;
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+// Header
+.header-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 0;
+	flex-wrap: wrap;
+	.header-logo {
+		width: 150px;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	ul {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		a {
+			font-family: 'Playfair';
+			font-size: 17px;
+			text-transform: uppercase;
+			transition: font-weight 0.2 ease-in;
+
+			&:hover {
+				font-weight: bolder;
+			}
+		}
+	}
+}
+
+// Hero
+.hero {
+	padding: 80px 0;
+	.hero-title {
+		font-family: 'Playfair';
+		font-size: 35px;
+		color: rgb(39, 39, 39);
+		text-transform: uppercase;
+		margin-bottom: 60px;
+		font-weight: bolder;
+	}
+	.hero-text {
+		width: 70%;
+		font-family: 'Playfair';
+		color: rgb(39, 39, 39);
+		font-size: 18px;
+		line-height: 28px;
+		padding-bottom: 30px;
+		margin: 0px auto 28px;
+		border-bottom: 2px solid rgb(187, 187, 187);
+	}
+
+	h2 {
+		color: rgb(38, 37, 37);
+		font-size: 25px;
+		text-transform: uppercase;
+		margin-bottom: 35px;
+	}
+
+	.hero-carts {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+
+		.hero-cart {
+			width: 500px;
+			height: 500px;
+			border-radius: 4px;
+			img {
+				border-radius: 4px;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+// Footer
+.footer {
+	padding-bottom: 20px;
+	p {
+		font-family: 'Playfair';
+		color: rgb(39, 39, 39);
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: 500;
+		a {
+			font-size: 18px;
+			line-height: 28px;
+			color: rgb(91, 91, 91);
+			transition: font-weight 0.2s ease-out, text-decoration 0.2s ease-out;
+
+			&:hover {
+				text-decoration: underline;
+				color: rgb(31, 31, 31);
+				font-weight: bold;
+			}
+		}
+	}
 }
